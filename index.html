@@ -11,6 +11,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/title.png">
 
 </head>
 <body class="">
@@ -33,10 +34,10 @@
                         <a class="nav-link" href="#activities">Küldetésünk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://disboard.org/server/reviews/1372937794837549186">Értékeléseink</a>
+                        <a class="nav-link" href="reviews.html">Értékeléseink</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/zFh7J9HQD2">Csatlakozz</a>
+                        <a class="nav-link" target="_blank" href="https://discord.gg/zFh7J9HQD2">Csatlakozz</a>
                     </li>
                 </ul>
             </div>
@@ -48,8 +49,8 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h1 class="display-3 fw-bold mb-4">ARANY LÉGIÓ</h1>
-                    <p class="lead mb-4">Csatlakozz hozzánk vagy valami ilyesmi</p>
-                    <a href="https://discord.gg/zFh7J9HQD2" class="btn btn-gold btn-lg">CSATLAKOZZ MOST</a>
+                    <p class="lead mb-4">Ha a Demokráciát választod, a Légiót választod !</p>
+                    <a href="https://discord.gg/zFh7J9HQD2" target="_blank" class="btn btn-gold btn-lg">CSATLAKOZZ MOST</a>
                 </div>
             </div>
         </div>
@@ -61,17 +62,61 @@
     <div class="container-fluid">
 
         <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./images/side1.png" class="rounded float-start leftside" alt="...">
+                <div class="toppp">
+                    <h3>Legion Challenge:</h3>
+                    <form class="form" action="">
+                        <select class="form-select" name="legionchallenge" id="legionchallenge" onchange='legionchallengejs()'>
+                            <option selected>Válassz a legördülő menüből</option>
+                            <option value="lastman">Last Man</option>
+                            <option value="freeflame">Freedom's flame</option>
+                            <option value="gas">Breaking Bad</option>
+                            <option value="laser">Laser Tag</option>
+                            <option value="melee">Valhalla</option>
+                        </select>
+                        <br><br>
+                    </form>
+                    <div class="" id="legionchallengeputhere">
 
-            <img src="./images/side1.png" class="rounded float-start col-md-4 mb-4 leftside" alt="...">
-            <section id="about" class="section-padding col-md-8 mb-4">
-                    <h2 class="section-title text-center"><button class="btn btn-lg btn-goldy" onclick="aboutus()">Tudj meg többet Rólunk</button></h2>
-                    <p class="text-center mb-5"></p>
-
-                        <div class="text-center">
-                            <p class="text-white" id="placeholder"></p>
-                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="about" class="section-padding col-md-4 mb-4 text-center">
+                        <audio autoplay controls>
+                          <source src="music/song8.wav" type="audio/wav">
+                        </audio>
+                        <br>
+                        <br>
+                    <h2 class="section-title text-center">Tudj meg többet Rólunk</h2>
+                        <h3 class="text-center">◤ 【 𝐆𝐨𝐥𝐝𝐞𝐧_𝐋𝐞𝐠𝐢𝐨𝐧 】</h3>
+                            <div class="box-drawing-border text-center">
+                                <span class="corner-top-right"></span>
+                                <span class="corner-bottom-left"></span>
+                                <p>Mi egy magyar Helldivers 2 légió vagyunk .</p>
+                                <br></br>
+                                <p>Célunk egy fejlődő szervert, és kedves közösséget összehozni .</p>
+                                <p>Melyben eddig elég nagy sikereket értünk el !</p>
+                                <br></br>
+                                <p>Aktív osztagokkal rendelkezünk.</p>
+                                <p>A közösség tetőtől-talpig jó arc, segítőkész emberekből áll !</p>
+                                <p>És a téma sem 0-24 a HD2</p>
+                                <br></br>
+                                
+                                <p>A szerverünk átlátható.</p>
+                                <p>A vezetőség hozzáértő.</p>
+                                <p>És hatalmas figyelmet szentelünk a tagokra.</p>
+                                <br></br>
+                                <p>Amennyiben szereted a játékot, és csapattársak nélkül maradtál, csatlakozz fel hozzánk, szívesen látunk !</p>
+                                <p>Osszuk együtt a demokráciát !</p>
+                            </div>
             </section>
-            <img src="./images/side2.png" class="rounded float-end col-md-4 mb-4 rightside" alt="...">
+            <div class="col-md-4 mb-4">
+                <img src="./images/side2.png" class="rounded float-end rightside" alt="...">
+                <div class="topppp">
+                    <p class="text-center democracy">"We are the sword of Democracy"</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -80,18 +125,29 @@
     <div class="container-fluid">
 
         <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./images/side3.png" class="rounded float-start leftside" alt="...">
+            </div>
+            <section id="activities" class="section-padding col-md-4 mb-4">
+                    <h2 class="section-title text-center">Küldetésünk</h2>
+                        <h3 class="text-center">◤ 【 𝐆𝐨𝐥𝐝𝐞𝐧_𝐋𝐞𝐠𝐢𝐨𝐧 】</h3>
+                            <div class="box-drawing-border text-center">
+                                <span class="corner-top-right"></span>
+                                <span class="corner-bottom-left"></span>
+                                <h4>Célunk:.</h4>
 
-            <img src="./images/side3.png" class="rounded float-start col-md-4 mb-4 leftside" alt="...">
-            <section id="activities" class="section-padding col-md-8 mb-4">
-                    <h2 class="section-title text-center">Küldetésünk
-                    </h2>
-                    <p class="text-center mb-5"></p>
-
-                        <div class="text-center">
-                            <p class="text-white">placeholder</p>
-                        </div>
+                                <p>Hogy az Arany Légió legyen az a szerver mely összefogja, és aktívan tartja a magyar Helldivers 2 közösséget.</p>
+                                <p>Ezt, kvázi már el is értük, de ez mellett természetesen cél a folyamatos bővülés és tartalom gyártás a légiósok számára.</p>
+                                
+                                <h4>Lásd:.</h4>
+                                <p>Legion Order</p>
+                                <p>Legion Challange</p>
+                                <p>Stb...</p>
+                            </div>
             </section>
-            <img src="./images/side4.png" class="rounded float-end col-md-4 mb-4 rightside" alt="...">
+            <div class="col-md-4 mb-4">
+                <img src="./images/side4.png" class="rounded float-end rightside" alt="...">
+            </div>
         </div>
     </div>
 
@@ -100,8 +156,9 @@
     <footer class="py-5 mt-5">
         <div class="container-fluid text-center">
             <div class="mb-2">
-                <a href="https://discord.gg/zFh7J9HQD2" class="social-icon"><i class="fab fa-discord"></i></a>
-                <a href="https://www.instagram.com/hd25.05.16/?igsh=MXFrcWFiYm5hZWRucA%3D%3D" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.gg/zFh7J9HQD2" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/hd25.05.16/?igsh=MXFrcWFiYm5hZWRucA%3D%3D" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@GL87S" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="mb-2">©2025 ARANY LEGIO. Minden jog fenntartva.</p>
         </div>
